@@ -4,31 +4,34 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 5000",
-    "build": "turbo run delete && turbo run dev && prettier 'out/*.html' --write",
+    "build": "next build && prettier 'out/*.html' --write",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier 'out/*.html' --write",
     "html": "serve out"
   },
   "dependencies": {
-    "@types/node": "18.15.13",
-    "@types/react": "18.0.37",
-    "@types/react-dom": "18.0.11",
+    "@types/node": "20.2.3",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
-    "eslint": "8.38.0",
-    "eslint-config-next": "13.3.0",
-    "next": "13.3.0",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.3",
+    "next": "13.4.3",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.62.0",
+    "sass": "^1.62.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "prettier": "2.8.7",
-    "prettier-plugin-tailwindcss": "0.2.7",
+    "animated-tailwindcss": "^4.0.0",
+    "prettier": "2.8.8",
+    "prettier-plugin-tailwindcss": "0.3.0",
     "serve": "^14.2.0",
-    "turbo": "^1.9.3"
+    "tailwindcss-animate": "^1.0.5",
+    "tailwindcss-fluid-spacing": "^0.4.0",
+    "turbo": "^1.9.8"
   }
 }
