@@ -5,6 +5,7 @@ export default function Page() {
     <>
       <main className="landing">
         <section className="page1">
+          <a className='logo' href='#'><img src="/project/pX9TNcP/both/img/landing202305/tam-quoc-chess-logo.webp" alt="" /></a>
           <div className='pageTitle'><h2 className='titleText font1'>Đập Bóng Hay - Nhận Quà Liền Tay</h2></div>
           <div className='pageLeft'>
             <div className='plTitle font1'>Số điểm hiện tại: <span className='txtDiem'>50</span></div>
@@ -13,6 +14,9 @@ export default function Page() {
             <div className='plItem font1'>Đổi quà</div>
             <div className='plItem font1'>Thể lệ</div>
             <div className='plItem font1'>Lịch Sử</div>
+          </div>
+          <div className='pageRight'>
+            
           </div>
         </section>
         <img className="bgLanding" alt="" src="/project/pX9TNcP/both/img/landing202305/bg-landing.webp" width="1920" height="3147" />

@@ -15,8 +15,11 @@ html {
   font-family: 'font1', sans-serif;
 }
 
+.logo{
+  @apply absolute top-[40px] right-[480px] animate-jump animate-infinite animate-duration-[4000ms] animate-ease-in-out; // animate-bounce animate-infinite
+}
 .landing {
-  @apply relative w-full select-none overflow-hidden;
+  @apply relative w-full select-none overflow-hidden animate-fade-up;
 }
 
 .bgLanding {
@@ -30,14 +33,14 @@ html {
   @apply w-[1920px]
 }
 .pageTitle {
-  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/page_name_bg.webp')] bg-no-repeat w-[542px] h-[175px] absolute top-[741px] left-[700px];
+  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/page_name_bg.webp')] bg-no-repeat w-[542px] h-[175px] absolute top-[741px] left-[700px] animate-fade-left;
 }
 .titleText {
   @apply absolute top-[47px] left-[87px] uppercase text-[#e96a19] text-[31px];
 }
 
 .pageLeft {
-  @apply absolute left-[226px] top-[919px] w-[342px] h-[300px];
+  @apply absolute left-[226px] top-[919px] w-[342px] animate-fade-down;
 }
 .plTitle {
   padding: 28px 22px 18px 30px;
@@ -49,10 +52,14 @@ html {
 }
 
 .txtDiem {
-  @apply text-[39px] pl-[10px] animate-jump animate-once;
+  @apply text-[39px] pl-[11px] animate-jump animate-once;
 }
 
 .plItem {
   @apply bg-[url('/project/pX9TNcP/both/img/landing202305/page1_slidebar_item_bg.webp')] bg-no-repeat w-[191px] h-[52px] text-[21px] text-white text-center flex items-center justify-center mx-auto cursor-pointer hover:scale-110 hover:saturate-150 transition-all mb-[10px] hover:text-[#e96a19];
+}
+
+.pageRight{
+  @apply absolute left-[590px] top-[910px] w-[1010px] h-[480px] bg-yellow-100;
 }
 
