@@ -15,4 +15,31 @@ html {
   font-family: 'font1', sans-serif;
 }
 
+.landing{
+  @apply relative w-full bg-cover select-none overflow-hidden;
+}
 
+.bgLanding {
+  @apply h-[100%] w-[100%] max-lg:hidden;
+}
+.m_bgLanding {
+  @apply h-[100%] w-[100%] hidden max-lg:block;
+}
+
+
+.page1 {
+
+}
+.pageTitle {
+  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/page_name_bg.webp')] bg-no-repeat w-[542px] h-[175px] absolute top-[741px] left-[700px];
+}
+.titleText {
+  @apply absolute top-[47px] left-[87px] uppercase text-[#e96a19] text-[31px];
+}
+
+.pageLeft {
+  @apply absolute left-0;
+}
+.pageLeftTitle {
+  @apply ;
+}

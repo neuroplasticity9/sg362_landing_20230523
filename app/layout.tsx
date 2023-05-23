@@ -13,13 +13,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <meta name="robots" content="noindex,nofollow" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
       </head>
       <body>
-        <HeaderCp />
         {children}
-        <FooterCp />
-        <Script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></Script>
       </body>
     </html>
   );

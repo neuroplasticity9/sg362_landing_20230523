@@ -8,7 +8,7 @@ const nextConfig = {
 //       },
 //     ]
 //   },
-  // images: { unoptimized: true },
+  images: { unoptimized: true },
   output: 'export',
   experimental: {
     appDir: true,
