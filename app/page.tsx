@@ -7,8 +7,12 @@ export default function Page() {
         <section className="page1">
           <div className='pageTitle'><h2 className='titleText font1'>Đập Bóng Hay - Nhận Quà Liền Tay</h2></div>
           <div className='pageLeft'>
-            <div className='pageLeftTitle'>Số điểm hiện tại: <span className='txtDiem'>50</span></div>
-            <div className='pageLeftItem'>Số điểm hiện tại: <span className='txtDiem'>50</span></div>
+            <div className='plTitle font1'>Số điểm hiện tại: <span className='txtDiem'>50</span></div>
+            <div className='plItem font1'>Thêm lượt</div>
+            <div className='plTitle plTitle2 font1'>Số lượt hiện tại: <span className='txtDiem'>200</span></div>
+            <div className='plItem font1'>Đổi quà</div>
+            <div className='plItem font1'>Thể lệ</div>
+            <div className='plItem font1'>Lịch Sử</div>
           </div>
         </section>
         <img className="bgLanding" alt="" src="/project/pX9TNcP/both/img/landing202305/bg-landing.webp" width="1920" height="3147" />
