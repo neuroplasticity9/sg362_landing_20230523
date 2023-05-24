@@ -2,7 +2,7 @@
 export function FooterCp() {
   return (
     <footer className="footer">
-      <div className="md:w-[52.08333vw] m-0 ml-auto mr-auto">
+      <div className="footerInner">
         <div className="relative" itemScope itemType="http://schema.org/Organization">
           <a
             href="http://sohagame.vn"
@@ -43,19 +43,11 @@ export function FooterCp() {
           <p className="text-[#c00]">Chơi quá 180 phút một ngày sẽ ảnh hưởng xấu đến sức khỏe</p>
           <img
             src="https://sohagame.mediacdn.vn/public/sg73/nut-60px.jpg"
-            className="md:block hidden absolute right-0 top-0"
+            className="play18H"
             width={60}
             height={98}
             alt="Lục Giới Phong Thần"
           />
-          <div className="logos">
-            <a
-              href="https://sohagame.vn"
-              className="sohaFooter"
-              title="SohaGame"
-            />
-            <div className="otherLogo" />
-          </div>
         </div>
       </div>
     </footer>

@@ -6,9 +6,15 @@ export default function Page() {
   return (
     <>
       <div className="mnNavtop font1">
-        <a className="mnNavItem" href='#'>Tải game</a>
-        <a className="mnNavItem" href='#'>Trang chủ</a>
-        <a className="mnNavItem" href='#'>Fanpage</a>
+        <a className="mnNavItem linkDownload" href="#">
+          Tải game
+        </a>
+        <a className="mnNavItem linkHome" href="#">
+          Trang chủ
+        </a>
+        <a className="mnNavItem linkFange" href="#">
+          Fanpage
+        </a>
       </div>
       <main className="landing">
         <section className="page1">
@@ -22,13 +28,13 @@ export default function Page() {
             <div className="plTitle font1">
               Số điểm hiện tại: <span className="txtDiem">50</span>
             </div>
-            <div className="plItem hScale font1">Thêm lượt</div>
+            <div className="plItem plMobile1 hScale font1">Thêm lượt</div>
             <div className="plTitle plTitle2 font1">
               Số lượt hiện tại: <span className="txtDiem">200</span>
             </div>
-            <div className="plItem hScale font1">Đổi quà</div>
-            <div className="plItem hScale font1">Thể lệ</div>
-            <div className="plItem hScale font1">Lịch Sử</div>
+            <div className="plItem plMobile2 hScale font1">Đổi quà</div>
+            <div className="plItem plMobile3 hScale font1">Thể lệ</div>
+            <div className="plItem plMobile4 hScale font1">Lịch Sử</div>
           </div>
           <div className="pageRight">
             <div className="prContent">
