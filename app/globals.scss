@@ -15,11 +15,11 @@ html {
   font-family: 'font1', sans-serif;
 }
 
-.logo{
+.logo {
   @apply absolute top-[40px] right-[480px] animate-jump animate-infinite animate-duration-[4000ms] animate-ease-in-out; // animate-bounce animate-infinite
 }
 .landing {
-  @apply relative w-full select-none overflow-hidden animate-fade-up;
+  @apply relative w-[1920px] select-none overflow-hidden animate-fade-up;
 }
 
 .bgLanding {
@@ -30,7 +30,7 @@ html {
 }
 
 .page1 {
-  @apply w-[1920px]
+  @apply w-[1920px] relative;
 }
 .pageTitle {
   @apply bg-[url('/project/pX9TNcP/both/img/landing202305/page_name_bg.webp')] bg-no-repeat w-[542px] h-[175px] absolute top-[741px] left-[700px] animate-fade-left;
@@ -56,10 +56,105 @@ html {
 }
 
 .plItem {
-  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/page1_slidebar_item_bg.webp')] bg-no-repeat w-[191px] h-[52px] text-[21px] text-white text-center flex items-center justify-center mx-auto cursor-pointer hover:scale-110 hover:saturate-150 transition-all mb-[10px] hover:text-[#e96a19];
+  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/page1_slidebar_item_bg.webp')] bg-no-repeat w-[191px] h-[52px] text-[21px] text-white text-center flex items-center justify-center mx-auto cursor-pointer mb-[10px] hover:text-[#e96a19];
+}
+.hScale {
+  @apply hover:scale-110 hover:saturate-150 transition-all;
 }
 
-.pageRight{
-  @apply absolute left-[590px] top-[910px] w-[1010px] h-[480px] bg-yellow-100;
+.pageRight {
+  @apply absolute left-[616px] top-[925px] w-[1010px] h-[430px];
+}
+.prContent {
+  @apply w-[100%] h-[100%] grid grid-cols-4 grid-rows-2;
+}
+.prItem {
+  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/page1_right_item_bg.webp')] bg-no-repeat w-[201px] h-[188px] relative cursor-pointer;
+  &.active {
+    @apply bg-[url('/project/pX9TNcP/both/img/landing202305/page1_right_item_bg_active.webp')];
+    .itemCard,
+    .itemCardValue,
+    .itemCardScore,
+    .icsText {
+      text-shadow: 2px 2px 0 #e96a19, -2px -2px 0 #e96a19, 2px -2px 0 #e96a19, -2px 2px 0 #e96a19, 2px 2px 0 #e96a19;
+    }
+  }
+  &:hover {
+    .itemCard,
+    .itemCardValue,
+    .itemCardScore,
+    .icsText {
+      @apply saturate-200 scale-105;
+    }
+  }
 }
 
+.itemCard {
+  text-shadow: 2px 2px 0 #3476e4, -2px -2px 0 #3476e4, 2px -2px 0 #3476e4, -2px 2px 0 #3476e4, 2px 2px 0 #3476e4;
+  @apply absolute top-[-20px] left-[4px] w-[100%] h-[100%] flex items-center justify-center text-white stroke-[2px] text-[20px] transition-all;
+}
+.itemCardValue {
+  text-shadow: 2px 2px 0 #3476e4, -2px -2px 0 #3476e4, 2px -2px 0 #3476e4, -2px 2px 0 #3476e4, 2px 2px 0 #3476e4;
+  @apply absolute top-[10px] left-[5px] w-[100%] h-[100%] flex items-center justify-center text-[35px] text-white transition-all;
+}
+.itemCardScore {
+  text-shadow: 2px 2px 0 #3476e4, -2px -2px 0 #3476e4, 2px -2px 0 #3476e4, -2px 2px 0 #3476e4, 2px 2px 0 #3476e4;
+  @apply absolute top-[-5px] left-[5px] w-[100%] h-[100%] flex items-center justify-center text-[35px] text-white transition-all;
+}
+.icsText {
+  text-shadow: 2px 2px 0 #3476e4, -2px -2px 0 #3476e4, 2px -2px 0 #3476e4, -2px 2px 0 #3476e4, 2px 2px 0 #3476e4;
+  @apply flex items-center justify-center text-[20px] text-white ml-[5px] transition-all;
+}
+.prStar {
+  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/star.webp')] bg-no-repeat w-[176px] h-[147px] mix-blend-screen absolute top-[-41px] left-[-21px];
+}
+
+.btnQuay {
+  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/btn_quay_1x.webp')] bg-no-repeat w-[369px] h-[154px] block bottom-[-105px] left-[110px] absolute;
+}
+
+.btnQuay10x {
+  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/btn_quay_10x.webp')] bg-no-repeat w-[369px] h-[154px] block bottom-[-105px] right-[110px] absolute;
+}
+
+.page2 {
+  @apply w-[1920px] absolute top-[1509px];
+}
+.pageTitle2 {
+  @apply static mx-auto mb-[20px];
+}
+.titleText2 {
+  @apply absolute top-[53px] left-[107px] uppercase text-[#e96a19] text-[31px];
+}
+.pageDesc {
+  @apply mx-auto text-[24px] text-white w-[835px] text-center mb-14;
+}
+.page2Content {
+  @apply grid grid-cols-3 grid-rows-2 w-[1200px] mx-auto gap-y-[75px];
+}
+.p2Item {
+  padding: 238px 58px 11px 87px;
+  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/page2_item_bg.webp')] bg-no-repeat w-[333px] h-[284px] relative cursor-pointer hover:scale-105;
+}
+.p2ItemText {
+  @apply text-[24px] text-[#00198d] text-center;
+}
+
+.footer {
+  @apply text-[#000] p-[20px] md:text-center text-[15px] absolute z-50 top-[2850px] w-[1920px];
+}
+.sohaFooter {
+  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/sohagame-black.webp')] bg-no-repeat w-[184px] h-[64px];
+}
+
+.mnNavtop {
+  padding: 137px 9px 12px 27px;
+  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/menuright_zone.webp')]  bg-no-repeat w-[199px] h-[326px] fixed top-[25%] right-[0px] z-50;
+}
+
+.mnNavItem {
+  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/menuright_bg.webp')] w-[156px] h-[43px] flex items-center justify-center text-[#0b2c6b] text-[25px] cursor-pointer mb-[11px];
+  &:hover{
+    @apply bg-[url('/project/pX9TNcP/both/img/landing202305/menuright_bg_active.webp')] text-[#a74100];
+  }
+}
