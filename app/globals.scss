@@ -19,7 +19,7 @@ html {
   @apply absolute w-[14.844vw] top-[2.083vw] right-[25vw] animate-jump animate-infinite animate-duration-[4000ms] animate-ease-in-out; // animate-bounce animate-infinite
 }
 .landing {
-  @apply relative w-[100vw] select-none overflow-hidden animate-fade-up;
+  @apply relative w-full select-none overflow-hidden animate-fade-up;
 }
 
 .bgLanding {
@@ -294,4 +294,51 @@ img {
 }
 .play18H {
   @apply max-lg:hidden;
+}
+
+
+
+
+/*Dialog Styles*/
+.dialogSmall {
+  @apply p-10 bg-[url('/project/pX9TNcP/both/img/landing202305/pop-up-large.webp')] bg-cover w-[625px] h-[381px] flex align-center ;
+	box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+	animation: fadeIn 1s ease both;
+}
+dialog {
+	@apply pt-14 bg-transparent overflow-hidden;
+	&::backdrop {
+		animation: fadeIn 1s ease both;
+		background: rgb(0 32 81 / 50%);
+		z-index: 2;
+		backdrop-filter: blur(10px);
+	}
+	.x {
+    @apply text-white border-none bg-none absolute top-[0] right-0 transition-all ease-in-out duration-300 cursor-pointer origin-center outline-none text-[50px] leading-[50px] font-bold hover:text-[#e96a19] scale-110;
+	}
+	h2 {
+		font-weight: 600;
+		font-size: 2rem;
+		padding-bottom: 1rem;
+	}
+	p {
+		font-size: 1rem;
+		line-height: 1.3rem;
+		padding: 0.5rem 0;
+		a {
+			&:visited {
+				color: rgb(var(--vs-primary));
+			}
+		}
+	}
+}
+
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }

@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 // import Image from 'next/image';
 import { FooterCp } from '@/components/footer';
+import Script from 'next/script';
 export default function Page() {
   return (
     <>
@@ -28,7 +29,7 @@ export default function Page() {
             <div className="plTitle font1">
               Số điểm hiện tại: <span className="txtDiem">50</span>
             </div>
-            <div className="plItem plMobile1 hScale font1">Thêm lượt</div>
+            <div className="plItem plMobile1 hScale font1 popupSmall">Thêm lượt</div>
             <div className="plTitle plTitle2 font1">
               Số lượt hiện tại: <span className="txtDiem">200</span>
             </div>
@@ -137,6 +138,15 @@ export default function Page() {
         <img alt="" src="/project/pX9TNcP/both/img/landing202305/tam-quoc-chess-logo.webp" width="285" height="260" /> */}
         <FooterCp />
       </main>
+
+      <div>
+        <dialog id="dialogSmall" className="dialog">
+          <div className="dialogSmall">
+            
+          </div>
+          <button aria-label="close" className="x closePopUpSmall">✕</button>
+        </dialog>
+      </div>
     </>
   );
 }
