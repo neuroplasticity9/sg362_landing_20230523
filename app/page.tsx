@@ -33,9 +33,9 @@ export default function Page() {
             <div className="plTitle plTitle2 font1">
               Số lượt hiện tại: <span className="txtDiem">200</span>
             </div>
-            <div className="plItem plMobile2 hScale font1">Đổi quà</div>
-            <div className="plItem plMobile3 hScale font1">Thể lệ</div>
-            <div className="plItem plMobile4 hScale font1">Lịch Sử</div>
+            <div className="plItem plMobile2 hScale font1 dialogGetGift_Popup">Đổi quà</div>
+            <div className="plItem plMobile3 hScale font1 dialogRule_Popup">Thể lệ</div>
+            <div className="plItem plMobile4 hScale font1 dialogHistory_Popup">Lịch Sử</div>
           </div>
           <div className="pageRight">
             <div className="prContent">
@@ -139,14 +139,440 @@ export default function Page() {
         <FooterCp />
       </main>
 
-      <div>
-        <dialog id="dialogSmall" className="dialog">
-          <div className="dialogSmall">
-            
+      <dialog id="dialogSmall" className="dialog">
+        <div className="dialogSmall font1">
+          <h1 className="dialogTitle">THÊM LƯỢT</h1>
+          <div className="dialogBtnShare"></div>
+          <div className="dialogText">*Tối đa 1 lượt/ngày</div>
+          <div className="dialogBtnPayment"></div>
+        </div>
+        <button aria-label="close" className="x closePopUpSmall">
+          ✕
+        </button>
+      </dialog>
+
+      <dialog id="dialogSmallCode" className="dialog">
+        <div className="dialogSmall font1">
+          <h1 className="dialogTitle giftHeadTitle">Code của bạn là:</h1>
+          <input id="giftCode" className="dialogGift" value={`TAMQUOCCHESS`} readOnly />
+        </div>
+        <button aria-label="close" className="x closePopUpSmallCode">
+          ✕
+        </button>
+      </dialog>
+
+      <dialog id="dialogGetGift" className="dialog">
+        <div className="dialogSmall dialogLarge font1">
+          <h1 className="dialogTitle">Đổi Quà</h1>
+          <div className="dialogLargeContent">
+            <table className="tableGift">
+              <thead>
+                <tr>
+                  <th className="giftTitle">Mốc</th>
+                  <th className="giftTitle">Điểm</th>
+                  <th className="giftTitle">Quà</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn disable">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn disable">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn disable">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>50</div>
+                  </td>
+                  <td>
+                    <button className="giftBtn">Đổi Quà</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <button aria-label="close" className="x closePopUpSmall">✕</button>
-        </dialog>
-      </div>
+        </div>
+        <button aria-label="close" className="x closeDialogGetGift">
+          ✕
+        </button>
+      </dialog>
+
+      <dialog id="dialogRule" className="dialog">
+        <div className="dialogSmall dialogLarge font1">
+          <h1 className="dialogTitle">Thể lệ</h1>
+          <div className="dialogLargeContent">
+            <div className="textRule">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            </div>
+          </div>
+        </div>
+        <button aria-label="close" className="x closeDialogRule">
+          ✕
+        </button>
+      </dialog>
+
+
+      <dialog id="dialogHistory" className="dialog">
+        <div className="dialogSmall dialogLarge font1">
+          <h1 className="dialogTitle">Lịch Sử</h1>
+          <div className="dialogLargeContent">
+            <table className="tableGift">
+              <thead>
+                <tr>
+                  <th className="giftTitle">Stt</th>
+                  <th className="giftTitle">Ngày</th>
+                  <th className="giftTitle">Quà đã nhận</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>1</div>
+                  </td>
+                  <td>
+                    <div>2023/08/05 lúc 10h:20</div>
+                  </td>
+                  <td>
+                  <div>!@#CA@%^!!C@AAA</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <button aria-label="close" className="x closeDialogHistory">
+          ✕
+        </button>
+      </dialog>
     </>
   );
 }
