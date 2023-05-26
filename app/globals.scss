@@ -422,9 +422,9 @@ img {
   @apply max-lg:hidden;
 }
 
-/*Dialog Styles*/
+/*Dialog Styles2*/
 .dialogSmall {
-  @apply bg-[url('/project/pX9TNcP/both/img/landing202305/pop-up-large-mobile.webp')] max-lg:p-[3.126vw] max-lg:pb-[4.374vw] max-lg:w-[91.10vw] max-lg:h-[62.4vw];
+  @apply max-lg:bg-[url('/project/pX9TNcP/both/img/landing202305/pop-up-large-mobile.webp')] max-lg:p-[3.126vw] max-lg:pb-[4.374vw] max-lg:w-[91.10vw] max-lg:h-[62.4vw];
 	animation: fadeIn 1s ease both;
 }
 .dialogTitle {
@@ -443,7 +443,7 @@ img {
   @apply max-lg:mb-[7.813vw] max-lg:pt-[6.25vw] ;
 }
 .dialogGift {
-  @apply max-lg:text-[10.938vw] max-lg:text-[#fff600] p-[3.126vw] bg-[#002f9c] rounded-[1.563vw] max-lg:w-[70%];
+  @apply max-lg:text-[10.938vw] max-lg:text-[#fff600] max-lg:p-[3.126vw] max-lg:bg-[#002f9c] max-lg:rounded-[1.563vw] max-lg:w-[70%];
 }
 
 .dialogLarge {

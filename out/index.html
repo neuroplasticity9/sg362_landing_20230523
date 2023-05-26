@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="/_next/static/css/695aa36dcc8bda12.css" data-precedence="next" />
+    <link rel="stylesheet" href="/_next/static/css/1517c9702fea68a4.css" data-precedence="next" />
+    <link rel="preload" as="script" href="/js/landing202305.js" />
     <meta name="robots" content="noindex,nofollow" />
     <title>Landing SG362</title>
     <meta name="description" content="Build landing with tailwinCSS and NextJS." />
@@ -20,11 +21,11 @@
         <div class="pageTitle"><h2 class="titleText font1">Đập Bóng Hay - Nhận Quà Liền Tay</h2></div>
         <div class="pageLeft">
           <div class="plTitle font1">Số điểm hiện tại: <span class="txtDiem">50</span></div>
-          <div class="plItem plMobile1 hScale font1">Thêm lượt</div>
+          <div class="plItem plMobile1 hScale font1 popupSmall">Thêm lượt</div>
           <div class="plTitle plTitle2 font1">Số lượt hiện tại: <span class="txtDiem">200</span></div>
-          <div class="plItem plMobile2 hScale font1">Đổi quà</div>
-          <div class="plItem plMobile3 hScale font1">Thể lệ</div>
-          <div class="plItem plMobile4 hScale font1">Lịch Sử</div>
+          <div class="plItem plMobile2 hScale font1 dialogGetGift_Popup">Đổi quà</div>
+          <div class="plItem plMobile3 hScale font1 dialogRule_Popup">Thể lệ</div>
+          <div class="plItem plMobile4 hScale font1 dialogHistory_Popup">Lịch Sử</div>
         </div>
         <div class="pageRight">
           <div class="prContent">
@@ -113,34 +114,267 @@
         </div>
       </footer>
     </main>
-    <script src="/_next/static/chunks/webpack-355db61695dc10bd.js" async=""></script>
+    <dialog id="dialogSmall" class="dialog">
+      <div class="dialogSmall font1">
+        <h1 class="dialogTitle">THÊM LƯỢT</h1>
+        <div class="dialogBtnShare"></div>
+        <div class="dialogText">*Tối đa 1 lượt/ngày</div>
+        <div class="dialogBtnPayment"></div>
+      </div>
+      <button aria-label="close" class="x closePopUpSmall">✕</button>
+    </dialog>
+    <dialog id="dialogSmallCode" class="dialog">
+      <div class="dialogSmall font1">
+        <h1 class="dialogTitle giftHeadTitle">Code của bạn là:</h1>
+        <input id="giftCode" class="dialogGift" readonly="" value="TAMQUOCCHESS" />
+      </div>
+      <button aria-label="close" class="x closePopUpSmallCode">✕</button>
+    </dialog>
+    <dialog id="dialogGetGift" class="dialog">
+      <div class="dialogSmall dialogLarge font1">
+        <h1 class="dialogTitle">Đổi Quà</h1>
+        <div class="dialogLargeContent">
+          <table class="tableGift">
+            <thead>
+              <tr>
+                <th class="giftTitle">Mốc</th>
+                <th class="giftTitle">Điểm</th>
+                <th class="giftTitle">Quà</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn disable">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn disable">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn disable">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>50</div></td>
+                <td><button class="giftBtn">Đổi Quà</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <button aria-label="close" class="x closeDialogGetGift">✕</button>
+    </dialog>
+    <dialog id="dialogRule" class="dialog">
+      <div class="dialogSmall dialogLarge font1">
+        <h1 class="dialogTitle">Thể lệ</h1>
+        <div class="dialogLargeContent">
+          <div class="textRule">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+            gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+            commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+            maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+            accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+            facilisis.
+          </div>
+        </div>
+      </div>
+      <button aria-label="close" class="x closeDialogRule">✕</button>
+    </dialog>
+    <dialog id="dialogHistory" class="dialog">
+      <div class="dialogSmall dialogLarge font1">
+        <h1 class="dialogTitle">Lịch Sử</h1>
+        <div class="dialogLargeContent">
+          <table class="tableGift">
+            <thead>
+              <tr>
+                <th class="giftTitle">Stt</th>
+                <th class="giftTitle">Ngày</th>
+                <th class="giftTitle">Quà đã nhận</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+              <tr>
+                <td><div>1</div></td>
+                <td><div>2023/08/05 lúc 10h:20</div></td>
+                <td><div>!@#CA@%^!!C@AAA</div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <button aria-label="close" class="x closeDialogHistory">✕</button>
+    </dialog>
+    <script src="/_next/static/chunks/webpack-365a038e8531f042.js" async=""></script>
     <script src="/_next/static/chunks/9b885df5-c9e0134728be5034.js" async=""></script>
     <script src="/_next/static/chunks/94-180af205330e4442.js" async=""></script>
-    <script src="/_next/static/chunks/main-app-e019c1ac681ce47f.js" async=""></script>
+    <script src="/_next/static/chunks/main-app-3fcfc34518881375.js" async=""></script>
   </body>
 </html>
 <script>
   (self.__next_f = self.__next_f || []).push([0]);
 </script>
 <script>
-  self.__next_f.push([1, '1:HL["/_next/static/css/695aa36dcc8bda12.css",{"as":"style"}]\n0:"$L2"\n']);
+  self.__next_f.push([1, '1:HL["/_next/static/css/1517c9702fea68a4.css",{"as":"style"}]\n0:"$L2"\n']);
 </script>
 <script>
   self.__next_f.push([
     1,
-    '3:I{"id":"3244","chunks":["272:static/chunks/webpack-355db61695dc10bd.js","827:static/chunks/9b885df5-c9e0134728be5034.js","94:static/chunks/94-180af205330e4442.js"],"name":"","async":false}\n5:I{"id":"8633","chunks":["272:static/chunks/webpack-355db61695dc10bd.js","827:static/chunks/9b885df5-c9e0134728be5034.js","94:static/chunks/94-180af205330e4442.js"],"name":"","async":false}\n6:I{"id":"8080","chunks":["272:static/chunks/webpack-355db61695dc10bd.js","827:static/chunks/9b885df5-c9e0134728be5034.js","94:sta'
+    '3:I{"id":"3244","chunks":["272:static/chunks/webpack-365a038e8531f042.js","827:static/chunks/9b885df5-c9e0134728be5034.js","94:static/chunks/94-180af205330e4442.js"],"name":"","async":false}\n5:I{"id":"8633","chunks":["272:static/chunks/webpack-365a038e8531f042.js","827:static/chunks/9b885df5-c9e0134728be5034.js","94:static/chunks/94-180af205330e4442.js"],"name":"","async":false}\n6:I{"id":"6475","chunks":["185:static/chunks/app/layout-f5e76f998a649d2d.js"],"name":"","async":false}\n7:I{"id":"8080","chunks":["'
   ]);
 </script>
 <script>
   self.__next_f.push([
     1,
-    'tic/chunks/94-180af205330e4442.js"],"name":"","async":false}\n7:I{"id":"6789","chunks":["272:static/chunks/webpack-355db61695dc10bd.js","827:static/chunks/9b885df5-c9e0134728be5034.js","94:static/chunks/94-180af205330e4442.js"],"name":"","async":false}\n'
+    '272:static/chunks/webpack-365a038e8531f042.js","827:static/chunks/9b885df5-c9e0134728be5034.js","94:static/chunks/94-180af205330e4442.js"],"name":"","async":false}\n8:I{"id":"6789","chunks":["272:static/chunks/webpack-365a038e8531f042.js","827:static/chunks/9b885df5-c9e0134728be5034.js","94:static/chunks/94-180af205330e4442.js"],"name":"","async":false}\n'
   ]);
 </script>
 <script>
   self.__next_f.push([
     1,
-    '2:[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/695aa36dcc8bda12.css","precedence":"next"}]],["$","$L3",null,{"assetPrefix":"","initialCanonicalUrl":"/","initialTree":["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"initialHead":["$L4",null],"globalErrorComponent":"$5","notFound":["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","meta",null,{"name":"robots","content":"noindex,nofollow"}]}],["$","body",null,{"children":[[],["$","div",null,{"className":"bgNotFound"}]]}]]}],"asNotFound":false,"children":[["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","meta",null,{"name":"robots","content":"noindex,nofollow"}]}],["$","body",null,{"children":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L7",null,{}],"templateStyles":"$undefined","notFound":["$","div",null,{"className":"bgNotFound"}],"notFoundStyles":[],"asNotFound":false,"childProp":{"current":[[["$","div",null,{"className":"mnNavtop font1","children":[["$","a",null,{"className":"mnNavItem linkDownload","href":"#","children":"Tải game"}],["$","a",null,{"className":"mnNavItem linkHome","href":"#","children":"Trang chủ"}],["$","a",null,{"className":"mnNavItem linkFange","href":"#","children":"Fanpage"}]]}],["$","main",null,{"className":"landing","children":[["$","section",null,{"className":"page1","children":[["$","a",null,{"className":"logo","href":"#","children":["$","img",null,{"src":"/project/pX9TNcP/both/img/landing202305/tam-quoc-chess-logo.webp","alt":""}]}],["$","div",null,{"className":"pageTitle","children":["$","h2",null,{"className":"titleText font1","children":"Đập Bóng Hay - Nhận Quà Liền Tay"}]}],["$","div",null,{"className":"pageLeft","children":[["$","div",null,{"className":"plTitle font1","children":["Số điểm hiện tại: ",["$","span",null,{"className":"txtDiem","children":"50"}]]}],["$","div",null,{"className":"plItem plMobile1 hScale font1","children":"Thêm lượt"}],["$","div",null,{"className":"plTitle plTitle2 font1","children":["Số lượt hiện tại: ",["$","span",null,{"className":"txtDiem","children":"200"}]]}],["$","div",null,{"className":"plItem plMobile2 hScale font1","children":"Đổi quà"}],["$","div",null,{"className":"plItem plMobile3 hScale font1","children":"Thể lệ"}],["$","div",null,{"className":"plItem plMobile4 hScale font1","children":"Lịch Sử"}]]}],["$","div",null,{"className":"pageRight","children":[["$","div",null,{"className":"prContent","children":[["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCard font1","children":"Thẻ SohaCoin"}],["$","div",null,{"className":"itemCardValue font1","children":"20K"}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCardScore font1","children":["10",["$","span",null,{"className":"icsText","children":"Điểm"}]]}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem active","children":[["$","div",null,{"className":"itemCard font1","children":"Thẻ SohaCoin"}],["$","div",null,{"className":"itemCardValue font1","children":"500K"}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCardScore font1","children":["20",["$","span",null,{"className":"icsText","children":"Điểm"}]]}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCard font1","children":"Thẻ SohaCoin"}],["$","div",null,{"className":"itemCardValue font1","children":"100K"}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCardScore font1","children":["50",["$","span",null,{"className":"icsText","children":"Điểm"}]]}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCard font1","children":"Thẻ SohaCoin"}],["$","div",null,{"className":"itemCardValue font1","children":"50K"}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCardScore font1","children":["100",["$","span",null,{"className":"icsText","children":"Điểm"}]]}],["$","div",null,{"className":"prStar"}]]}]]}],["$","a",null,{"className":"btnQuay hScale","href":"#"}],["$","a",null,{"className":"btnQuay10x hScale","href":"#"}]]}]]}],["$","section",null,{"className":"page2","children":[["$","div",null,{"className":"pageTitle pageTitle2","children":["$","h2",null,{"className":"titleText titleText2 font1","children":"Tích vòng Nhận quà cực thích"}]}],["$","div",null,{"className":"pageDesc font1","children":"Chỉ cần tích lũy số vòng hoàn thành đạt các mốc quy định, Tướng Quân sẽ được phần quà vô cùng hấp dẫn dưới đây. Tích vòng thả ga nhận quà cực đã"}],["$","div",null,{"className":"page2Content","children":[["$","div",null,{"className":"p2Item hScale","children":["$","div",null,{"className":"p2ItemText font1","children":"25 vòng"}]}],["$","div",null,{"className":"p2Item hScale","children":["$","div",null,{"className":"p2ItemText font1","children":"50 vòng"}]}],["$","div",null,{"className":"p2Item hScale","children":["$","div",null,{"className":"p2ItemText font1","children":"100 vòng"}]}],["$","div",null,{"className":"p2Item hScale","children":["$","div",null,{"className":"p2ItemText font1","children":"200 vòng"}]}],["$","div",null,{"className":"p2Item hScale","children":["$","div",null,{"className":"p2ItemText font1","children":"500 vòng"}]}],["$","div",null,{"className":"p2Item hScale","children":["$","div",null,{"className":"p2ItemText font1","children":"1000 vòng"}]}]]}]]}],["$","img",null,{"className":"bgLanding","alt":"","src":"/project/pX9TNcP/both/img/landing202305/bg-landing.webp","width":"1920","height":"3147"}],["$","img",null,{"className":"m_bgLanding","alt":"","src":"/project/pX9TNcP/both/img/landing202305/bg-landing-mobile.webp","width":"640","height":"3364"}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"footerInner","children":["$","div",null,{"className":"relative","itemScope":true,"itemType":"http://schema.org/Organization","children":[["$","a",null,{"href":"http://sohagame.vn","title":"SohaGame","className":"sohaFooter","target":"_blank"}],["$","a",null,{"className":"text-[#000]","itemProp":"url","href":"https://lucgioiphongthan.vn","title":"Lục Giới Phong Thần","children":"Tam Quốc Chess "}]," - Phát hành bởi SohaGame SohaGame ",["$","br",null,{}],["$","span",null,{"className":"az","children":"Tổng đài"}],": ",["$","span",null,{"className":"text-[#000]","children":"19006639"}],["$","br",null,{}],"Người chịu trách nhiệm nội dung: Bà Nguyễn Thị Thùy Dung",["$","br",null,{}]," Email:"," ",["$","a",null,{"className":"text-[#000]","href":"mailto:hotro@sohagame.vn","children":"hotro@sohagame.vn"}],["$","br",null,{}]," Hỗ trợ:"," ",["$","a",null,{"href":"https://hotro.sohagame.vn","target":"_blank","rel":"noopener","className":"text-[#000]","children":"https://hotro.sohagame.vn"}],["$","br",null,{}],["$","div",null,{"children":[" ","Công ty TNHH Soha - Địa chỉ: Tầng 19, tòa nhà Center Building, Hapulico Complex ",["$","br",null,{"className":"md:inline hidden"}]," số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, thành phố Hà Nội."," "]}],["$","a",null,{"className":"text-[#000]","href":"http://sohagame.vn dieu-khoan","target":"_blank","title":"Điều khoản","rel":"noopener","children":"Điều khoản"}]," ","-"," ",["$","a",null,{"href":"https://lucgioiphongthan.vn/huong-dan","title":"Hướng dẫn cài đặt và gỡ bỏ","children":"Hướng dẫn cài đặt và gỡ bỏ"}],["$","a",null,{"href":"https://sohagame.vn/huong-dan-game","className":"kich-ban","children":[" ","- Kịch bản hướng dẫn"]}],["$","p",null,{"className":"text-[#c00]","children":"Chơi quá 180 phút một ngày sẽ ảnh hưởng xấu đến sức khỏe"}],["$","img",null,{"src":"https://sohagame.mediacdn.vn/public/sg73/nut-60px.jpg","className":"play18H","width":60,"height":98,"alt":"Lục Giới Phong Thần"}]]}]}]}]]}]],null],"segment":"__PAGE__"},"styles":[]}]}]]}],null]}]]\n'
+    '2:[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1517c9702fea68a4.css","precedence":"next"}]],["$","$L3",null,{"assetPrefix":"","initialCanonicalUrl":"/","initialTree":["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"initialHead":["$L4",null],"globalErrorComponent":"$5","notFound":["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","meta",null,{"name":"robots","content":"noindex,nofollow"}]}],["$","body",null,{"children":[[[],["$","div",null,{"className":"bgNotFound"}]],["$","$L6",null,{"src":"/js/landing202305.js"}]]}]]}],"asNotFound":false,"children":[["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","meta",null,{"name":"robots","content":"noindex,nofollow"}]}],["$","body",null,{"children":[["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":["$","div",null,{"className":"bgNotFound"}],"notFoundStyles":[],"asNotFound":false,"childProp":{"current":[[["$","div",null,{"className":"mnNavtop font1","children":[["$","a",null,{"className":"mnNavItem linkDownload","href":"#","children":"Tải game"}],["$","a",null,{"className":"mnNavItem linkHome","href":"#","children":"Trang chủ"}],["$","a",null,{"className":"mnNavItem linkFange","href":"#","children":"Fanpage"}]]}],["$","main",null,{"className":"landing","children":[["$","section",null,{"className":"page1","children":[["$","a",null,{"className":"logo","href":"#","children":["$","img",null,{"src":"/project/pX9TNcP/both/img/landing202305/tam-quoc-chess-logo.webp","alt":""}]}],["$","div",null,{"className":"pageTitle","children":["$","h2",null,{"className":"titleText font1","children":"Đập Bóng Hay - Nhận Quà Liền Tay"}]}],["$","div",null,{"className":"pageLeft","children":[["$","div",null,{"className":"plTitle font1","children":["Số điểm hiện tại: ",["$","span",null,{"className":"txtDiem","children":"50"}]]}],["$","div",null,{"className":"plItem plMobile1 hScale font1 popupSmall","children":"Thêm lượt"}],["$","div",null,{"className":"plTitle plTitle2 font1","children":["Số lượt hiện tại: ",["$","span",null,{"className":"txtDiem","children":"200"}]]}],["$","div",null,{"className":"plItem plMobile2 hScale font1 dialogGetGift_Popup","children":"Đổi quà"}],["$","div",null,{"className":"plItem plMobile3 hScale font1 dialogRule_Popup","children":"Thể lệ"}],["$","div",null,{"className":"plItem plMobile4 hScale font1 dialogHistory_Popup","children":"Lịch Sử"}]]}],["$","div",null,{"className":"pageRight","children":[["$","div",null,{"className":"prContent","children":[["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCard font1","children":"Thẻ SohaCoin"}],["$","div",null,{"className":"itemCardValue font1","children":"20K"}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCardScore font1","children":["10",["$","span",null,{"className":"icsText","children":"Điểm"}]]}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem active","children":[["$","div",null,{"className":"itemCard font1","children":"Thẻ SohaCoin"}],["$","div",null,{"className":"itemCardValue font1","children":"500K"}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCardScore font1","children":["20",["$","span",null,{"className":"icsText","children":"Điểm"}]]}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCard font1","children":"Thẻ SohaCoin"}],["$","div",null,{"className":"itemCardValue font1","children":"100K"}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCardScore font1","children":["50",["$","span",null,{"className":"icsText","children":"Điểm"}]]}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCard font1","children":"Thẻ SohaCoin"}],["$","div",null,{"className":"itemCardValue font1","children":"50K"}],["$","div",null,{"className":"prStar"}]]}],["$","div",null,{"className":"prItem","children":[["$","div",null,{"className":"itemCardScore font1","children":["100",["$","span",null,{"className":"icsText","children":"Điểm"}]]}],["$","div",null,{"className":"prStar"}]]}]]}],["$","a",null,{"className":"btnQuay hScale","href":"#"}],["$","a",null,{"className":"btnQuay10x hScale","href":"#"}]]}]]}],["$","section",null,{"className":"page2","children":[["$","div",null,{"className":"pageTitle pageTitle2","children":["$","h2",null,{"className":"titleText titleText2 font1","children":"Tích vòng Nhận quà cực thích"}]}],["$","div",null,{"className":"pageDesc font1","children":"Chỉ cần tích lũy số vòng hoàn thành đạt các mốc quy định, Tướng Quân sẽ được phần quà vô cùng hấp dẫn dưới đây. Tích vòng thả ga nhận quà cực đã"}],["$","div",null,{"className":"page2Content","children":[["$","div",null,{"className":"p2Item hScale","children":["$","div",null,{"className":"p2ItemText font1","children":"25 vòng"}]}],["$","div",null,{"className":"p2Item hScale","children":["$","div",null,{"className":"p2ItemText font1","children":"50 vòng"}]}],["$","div",null,{"className":"p2Item hScale","children":["$","div",null,{"className":"p2ItemText font1","children":"100 vòng"}]}],["$","div",null,{"className":"p2Item hScale","children":["$","div",null,{"className":"p2ItemText font1","children":"200 vòng"}]}],["$","div",null,{"className":"p2Item hScale","children":["$","div",null,{"className":"p2ItemText font1","children":"500 vòng"}]}],["$","div",null,{"className":"p2Item hScale","children":["$","div",null,{"className":"p2ItemText font1","children":"1000 vòng"}]}]]}]]}],["$","img",null,{"className":"bgLanding","alt":"","src":"/project/pX9TNcP/both/img/landing202305/bg-landing.webp","width":"1920","height":"3147"}],["$","img",null,{"className":"m_bgLanding","alt":"","src":"/project/pX9TNcP/both/img/landing202305/bg-landing-mobile.webp","width":"640","height":"3364"}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"footerInner","children":["$","div",null,{"className":"relative","itemScope":true,"itemType":"http://schema.org/Organization","children":[["$","a",null,{"href":"http://sohagame.vn","title":"SohaGame","className":"sohaFooter","target":"_blank"}],["$","a",null,{"className":"text-[#000]","itemProp":"url","href":"https://lucgioiphongthan.vn","title":"Lục Giới Phong Thần","children":"Tam Quốc Chess "}]," - Phát hành bởi SohaGame SohaGame ",["$","br",null,{}],["$","span",null,{"className":"az","children":"Tổng đài"}],": ",["$","span",null,{"className":"text-[#000]","children":"19006639"}],["$","br",null,{}],"Người chịu trách nhiệm nội dung: Bà Nguyễn Thị Thùy Dung",["$","br",null,{}]," Email:"," ",["$","a",null,{"className":"text-[#000]","href":"mailto:hotro@sohagame.vn","children":"hotro@sohagame.vn"}],["$","br",null,{}]," Hỗ trợ:"," ",["$","a",null,{"href":"https://hotro.sohagame.vn","target":"_blank","rel":"noopener","className":"text-[#000]","children":"https://hotro.sohagame.vn"}],["$","br",null,{}],["$","div",null,{"children":[" ","Công ty TNHH Soha - Địa chỉ: Tầng 19, tòa nhà Center Building, Hapulico Complex ",["$","br",null,{"className":"md:inline hidden"}]," số 1 Nguyễn Huy Tưởng, phường Thanh Xuân Trung, quận Thanh Xuân, thành phố Hà Nội."," "]}],["$","a",null,{"className":"text-[#000]","href":"http://sohagame.vn dieu-khoan","target":"_blank","title":"Điều khoản","rel":"noopener","children":"Điều khoản"}]," ","-"," ",["$","a",null,{"href":"https://lucgioiphongthan.vn/huong-dan","title":"Hướng dẫn cài đặt và gỡ bỏ","children":"Hướng dẫn cài đặt và gỡ bỏ"}],["$","a",null,{"href":"https://sohagame.vn/huong-dan-game","className":"kich-ban","children":[" ","- Kịch bản hướng dẫn"]}],["$","p",null,{"className":"text-[#c00]","children":"Chơi quá 180 phút một ngày sẽ ảnh hưởng xấu đến sức khỏe"}],["$","img",null,{"src":"https://sohagame.mediacdn.vn/public/sg73/nut-60px.jpg","className":"play18H","width":60,"height":98,"alt":"Lục Giới Phong Thần"}]]}]}]}]]}],["$","dialog",null,{"id":"dialogSmall","className":"dialog","children":[["$","div",null,{"className":"dialogSmall font1","children":[["$","h1",null,{"className":"dialogTitle","children":"THÊM LƯỢT"}],["$","div",null,{"className":"dialogBtnShare"}],["$","div",null,{"className":"dialogText","children":"*Tối đa 1 lượt/ngày"}],["$","div",null,{"className":"dialogBtnPayment"}]]}],["$","button",null,{"aria-label":"close","className":"x closePopUpSmall","children":"✕"}]]}],["$","dialog",null,{"id":"dialogSmallCode","className":"dialog","children":[["$","div",null,{"className":"dialogSmall font1","children":[["$","h1",null,{"className":"dialogTitle giftHeadTitle","children":"Code của bạn là:"}],["$","input",null,{"id":"giftCode","className":"dialogGift","value":"TAMQUOCCHESS","readOnly":true}]]}],["$","button",null,{"aria-label":"close","className":"x closePopUpSmallCode","children":"✕"}]]}],["$","dialog",null,{"id":"dialogGetGift","className":"dialog","children":[["$","div",null,{"className":"dialogSmall dialogLarge font1","children":[["$","h1",null,{"className":"dialogTitle","children":"Đổi Quà"}],["$","div",null,{"className":"dialogLargeContent","children":["$","table",null,{"className":"tableGift","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"giftTitle","children":"Mốc"}],["$","th",null,{"className":"giftTitle","children":"Điểm"}],["$","th",null,{"className":"giftTitle","children":"Quà"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn disable","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn disable","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn disable","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"50"}]}],["$","td",null,{"children":["$","button",null,{"className":"giftBtn","children":"Đổi Quà"}]}]]}]]}]]}]}]]}],["$","button",null,{"aria-label":"close","className":"x closeDialogGetGift","children":"✕"}]]}],["$","dialog",null,{"id":"dialogRule","className":"dialog","children":[["$","div",null,{"className":"dialogSmall dialogLarge font1","children":[["$","h1",null,{"className":"dialogTitle","children":"Thể lệ"}],["$","div",null,{"className":"dialogLargeContent","children":["$","div",null,{"className":"textRule","children":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."}]}]]}],["$","button",null,{"aria-label":"close","className":"x closeDialogRule","children":"✕"}]]}],["$","dialog",null,{"id":"dialogHistory","className":"dialog","children":[["$","div",null,{"className":"dialogSmall dialogLarge font1","children":[["$","h1",null,{"className":"dialogTitle","children":"Lịch Sử"}],["$","div",null,{"className":"dialogLargeContent","children":["$","table",null,{"className":"tableGift","children":[["$","thead",null,{"children":["$","tr",null,{"children":[["$","th",null,{"className":"giftTitle","children":"Stt"}],["$","th",null,{"className":"giftTitle","children":"Ngày"}],["$","th",null,{"className":"giftTitle","children":"Quà đã nhận"}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}],["$","tr",null,{"children":[["$","td",null,{"children":["$","div",null,{"children":"1"}]}],["$","td",null,{"children":["$","div",null,{"children":"2023/08/05 lúc 10h:20"}]}],["$","td",null,{"children":["$","div",null,{"children":"!@#CA@%^!!C@AAA"}]}]]}]]}]]}]}]]}],["$","button",null,{"aria-label":"close","className":"x closeDialogHistory","children":"✕"}]]}]],null],"segment":"__PAGE__"},"styles":[]}],["$","$L6",null,{"src":"/js/landing202305.js"}]]}]]}],null]}]]\n'
   ]);
 </script>
 <script>

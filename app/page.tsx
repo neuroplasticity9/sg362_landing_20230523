@@ -386,7 +386,6 @@ export default function Page() {
         </button>
       </dialog>
 
-
       <dialog id="dialogHistory" className="dialog">
         <div className="dialogSmall dialogLarge font1">
           <h1 className="dialogTitle">Lịch Sử</h1>
@@ -408,7 +407,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -419,7 +418,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -430,7 +429,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -441,7 +440,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -452,7 +451,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -463,7 +462,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -474,7 +473,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -485,7 +484,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -496,7 +495,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -507,7 +506,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -518,7 +517,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -529,7 +528,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -540,7 +539,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -551,7 +550,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
                 <tr>
@@ -562,7 +561,7 @@ export default function Page() {
                     <div>2023/08/05 lúc 10h:20</div>
                   </td>
                   <td>
-                  <div>!@#CA@%^!!C@AAA</div>
+                    <div>!@#CA@%^!!C@AAA</div>
                   </td>
                 </tr>
               </tbody>
